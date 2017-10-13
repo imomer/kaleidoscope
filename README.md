@@ -1,14 +1,14 @@
-# Winja - For Web Ninjas
+# Kaleidoscope HTML
 
-Web UI build tool loaded with SASS and powered with Gulp and NPM.
+HTML Dev for Kaleidoscope.
 
 ## Installation
 Clone the repo with
 ```
-git clone https://github.com/imomer/winja.git
+clone https://github.com/imomer/kaleidoscope.git kaleidoscope-html
 ```
 
-Then go inside your cloned folder `cd winja` and run
+Then go inside your cloned folder `cd kaleidoscope-html` and run
 ```
 npm i && npm start
 ```
@@ -27,5 +27,8 @@ npm run build
 
 
 ## Author
-* **Omer Hussain** - *Co-Founder* - [Base29](http://base29.com), [Webizards](http://webizards.com), [I'm Omer](http://imomer.com)
-* **Hina Farid** - *Co-Founder* - [Webizards](http://webizards.com)
+**Omer Hussain**
+
+*Co-Founder* - [Base29](http://base29.com)
+
+*Founder* - [I'm Omer](http://imomer.com)
