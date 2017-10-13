@@ -45,10 +45,137 @@ aside,
 footer {
   display: block; }
 
+@font-face {
+  font-family: helvetica;
+  src: url(../fonts/helvetica_normal.ttf);
+  src: url(../fonts/helvetica_normal.woff);
+  src: url(../fonts/helvetica_normal.woff2);
+  src: url(../fonts/helvetica_normal.svg);
+  src: url(../fonts/helvetica_normal.eot); }
+
+body {
+  border-top: 3px solid #4f8d8c;
+  font-family: helvetica;
+  font-size: 17px;
+  color: #383046; }
+
 /* ====================== */
 /*         LAYOUT         */
 /* ====================== */
 /* Header */
+#site-header {
+  padding: 20px 0 0 0; }
+  #site-header .container {
+    /* logo */
+    /* logo */
+    /* site-block */
+    /* site-block */ }
+    #site-header .container #logo {
+      float: left;
+      width: 209px;
+      height: 108px; }
+      #site-header .container #logo a {
+        background: url(../images/logo@1x.png);
+        width: 209px;
+        height: 108px;
+        display: block;
+        text-indent: -9000px; }
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+          #site-header .container #logo a {
+            background: url(../images/logo@2x.png); } }
+    #site-header .container .site-block {
+      float: right;
+      text-align: right;
+      /* quick-links */
+      /* quick-links */
+      /* navbar */
+      /* navbar */ }
+      #site-header .container .site-block .quick-links {
+        margin-bottom: 40px; }
+        #site-header .container .site-block .quick-links a {
+          text-decoration: none;
+          font-size: 16px;
+          color: #7d7b7f;
+          border-right: 1px solid #ededed;
+          display: inline-block;
+          padding: 0 21px 0 18px; }
+          #site-header .container .site-block .quick-links a i {
+            margin-right: 12px; }
+          #site-header .container .site-block .quick-links a:last-child {
+            border-right: 0;
+            padding: 0; }
+          #site-header .container .site-block .quick-links a:hover {
+            color: #8fc165; }
+        #site-header .container .site-block .quick-links .search i {
+          color: #cc4961; }
+        #site-header .container .site-block .quick-links .help i {
+          color: #cc4961; }
+        #site-header .container .site-block .quick-links .company-tel {
+          border-right: 0; }
+          #site-header .container .site-block .quick-links .company-tel i {
+            color: #4f8d8c; }
+        #site-header .container .site-block .quick-links .btn {
+          background: green;
+          width: 180px;
+          line-height: 50px;
+          color: #fff;
+          text-align: center; }
+      #site-header .container .site-block #navbar ul {
+        list-style: none; }
+        #site-header .container .site-block #navbar ul li {
+          float: left;
+          position: relative; }
+          #site-header .container .site-block #navbar ul li a {
+            display: block;
+            text-decoration: none;
+            font-size: 19px;
+            color: #383046;
+            margin-left: 48px; }
+            #site-header .container .site-block #navbar ul li a:after {
+              content: '';
+              border-bottom: 3px solid #8fc165;
+              width: 39px;
+              display: none;
+              margin: 0 auto;
+              padding-bottom: 20px; }
+            #site-header .container .site-block #navbar ul li a:hover {
+              color: #8fc165; }
+              #site-header .container .site-block #navbar ul li a:hover:after {
+                display: block; }
+          #site-header .container .site-block #navbar ul li ul {
+            background: #8fc165;
+            position: absolute;
+            top: 100%;
+            left: 34%;
+            display: none; }
+            #site-header .container .site-block #navbar ul li ul li a {
+              width: 170px;
+              display: block;
+              color: #ffffff;
+              text-align: left;
+              margin: 0;
+              padding: 10px; }
+              #site-header .container .site-block #navbar ul li ul li a:hover {
+                background: #383046;
+                color: #ffffff; }
+                #site-header .container .site-block #navbar ul li ul li a:hover:after {
+                  display: none; }
+            #site-header .container .site-block #navbar ul li ul li ul {
+              position: absolute;
+              top: 0;
+              left: 100%; }
+          #site-header .container .site-block #navbar ul li:hover > ul {
+            display: block; }
+          #site-header .container .site-block #navbar ul li.active > a {
+            color: #8fc165; }
+            #site-header .container .site-block #navbar ul li.active > a:after {
+              content: '';
+              border-bottom: 3px solid #8fc165;
+              width: 39px;
+              display: block;
+              margin: 0 auto;
+              padding-bottom: 20px; }
+
 /* Footer */
 /* Base */
 .container {
