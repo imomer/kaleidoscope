@@ -1,0 +1,8 @@
+// Mixins
+@mixin retina-img($img, $ext, $width, $height) {
+    background: url('../images/' + $img + '.' + $ext) no-repeat;
+    background-size: $width $height;
+    width: $width;
+    height: $height;
+    display: block;
+}

@@ -1,0 +1,17 @@
+{
+  "name": "winja",
+  "version": "1.0.0",
+  "description": "Winja - The front-end build system with gulp for web ninjas",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build"
+  },
+  "author": "Omer Hussain",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0"
+  }
+}
