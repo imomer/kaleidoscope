@@ -1,165 +1,171 @@
 /* Header */
 #site-header {
-	padding: 20px 0 0 0;
-	.container {
-		/* logo */
-		#logo {
-			float: left;
-			width: 209px;
-			height: 108px;
-			a {
-				background: url(../images/logo@1x.png);
-				width: 209px;
-				height: 108px;
-				display: block;
-				text-indent: -9000px;
-				@include media("retina2x") {
-					background: url(../images/logo@2x.png);
-				}
-			}
-		}
-		/* logo */
+    padding: 20px 0 0 0;
+    .container {
+        /* logo */
+        #logo {
+            float: left;
+            width: 209px;
+            height: 108px;
+            a {
+                background: url(../images/logo@1x.png);
+                width: 209px;
+                height: 108px;
+                display: block;
+                text-indent: -9000px;
+                @include media("retina2x") {
+                    background: url(../images/logo@2x.png);
+                }
+            }
+        }
+        /* logo */
 
-		/* site-block */
-		.site-block {
-			float: right;
-			text-align: right;
-			/* quick-links */
-			.quick-links {
-				margin-bottom: 40px;
-				a {
-					text-decoration: none;
-					font-size: 16px;
-					color: $jumbo;
-					border-right: 1px solid $gallery;
-					display: inline-block;
-					padding: 0 21px 0 18px;
-					i {
-						margin-right: 12px;
-					}
-					&:last-child {
-						border-right: 0;
-						padding: 0;
-					}
-					&:hover {
-						color: $mantis;
-					}
-				}
-				.search {
-					i {
-						color: $chestnutRose;
-					}
-				}
-				.help {
-					i {
-						color: $chestnutRose;
-					}
-				}
-				.company-tel {
-					border-right: 0;
-					i {
-						color: $smaltBlue;
-					}
-				}
+        /* site-block */
+        .site-block {
+            float: right;
+            text-align: right;
+            /* quick-links */
+            .quick-links {
+                margin-bottom: 40px;
+                a {
+                    text-decoration: none;
+                    font-size: 16px;
+                    color: $jumbo;
+                    border-right: 1px solid $gallery;
+                    display: inline-block;
+                    padding: 0 21px 0 18px;
+                    i {
+                        margin-right: 12px;
+                    }
+                    &:last-child {
+                        border-right: 0;
+                        padding: 0;
+                    }
+                    &:hover {
+                        color: $mantis;
+                    }
+                }
+                .search {
+                    i {
+                        color: $chestnutRose;
+                    }
+                }
+                .help {
+                    i {
+                        color: $chestnutRose;
+                    }
+                }
+                .company-tel {
+                    border-right: 0;
+                    i {
+                        color: $smaltBlue;
+                    }
+                }
 
-				.btn {
-					background: green;
-					width: 180px;
-					line-height: 50px;
-					color: #fff;
-					text-align: center;
-				}
-			}
-			/* quick-links */
-			
-			/* navbar */
-			#navbar {
-				ul {
-					list-style: none;
-					li {
-						float: left;
-						position: relative;
-						a {
-							display: block;
-							text-decoration: none;
-							font-size: 19px;
-							color: $blackCurrant;
-							margin-left: 48px;
-							
-							&:after {
-								content: '';
-								border-bottom: 3px solid $mantis;
-								width: 39px;
-								display: none;
-								margin: 0 auto;
-								padding-bottom: 20px;
-							}		
+                .btn {
+                    background: green;
+                    width: 180px;
+                    line-height: 50px;
+                    color: #fff;
+                    text-align: center;
+                }
+            }
+            /* quick-links */
 
-							&:hover {
-								color: $mantis;
-								&:after {
-									display: block;
-								}
-							}
+            /* navbar */
+            #navbar {
+                ul {
+                    list-style: none;
+                    li {
+                        float: left;
+                        position: relative;
+                        margin-left: 52px;
+                        a {
+                            display: block;
+                            text-decoration: none;
+                            font-size: 19px;
+                            color: $blackCurrant;
+                            padding-bottom: 20px;
+                            &:hover {
+                                color: $mantis;
+                            }
 
-						}
+                        }
 
-						ul {
-							background: $mantis;
-							position: absolute;
-							top: 100%;
-							left: 34%;
-							display: none;
-							li {
-								a {
-									width: 170px;
-									display: block;
-									color: $white;
-									text-align: left;
-									margin: 0;
-									padding: 10px;
-									&:hover {
-										background: $blackCurrant;
-										color: $white;
-										&:after {
-											display: none;
-										}
-									}
-								}
+                        ul {
+                            background: $mantis;
+                            position: absolute;
+                            top: 100%;
+                            display: none;
+                            li {
+                                margin-left: 0;
+                                &:after {
+                                    border: none;
+                                }
+                                a {
+                                    width: 170px;
+                                    display: block;
+                                    color: $white;
+                                    text-align: left;
+                                    margin: 0;
+                                    padding: 10px;
+                                    &:hover {
+                                        background: $blackCurrant;
+                                        color: $white;
+                                        &:after {
+                                            display: none;
+                                        }
+                                    }
+                                }
 
-								ul {
-									position: absolute;
-									top: 0;
-									left: 100%;
-								}
-							}
-						}
+                                ul {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 100%;
+                                }
+                                &:hover {
+                                    > a {
+                                        background: $blackCurrant;
+                                        color: $white;
+                                    }
+                                }
+                            }
+                        }
 
-						&:hover {
-							> ul {
-								display: block;
-							}
-						}
+                        &:hover {
+                            > ul {
+                                display: block;
+                            }
+                            &:after {
+                                visibility: visible;
+                            }
+                            > a {
+                                color: $mantis;
+                            }
+                        }
 
-						&.active {
-							> a {
-								color: $mantis;
-								&:after {
-								content: '';
-								border-bottom: 3px solid $mantis;
-								width: 39px;
-								display: block;
-								margin: 0 auto;
-								padding-bottom: 20px;
-								}	
-							}
-						}
-					}
-				}
-			}
-		/* navbar */
+                        &.current-menu-item {
+                            > a {
+                                color: $mantis;
+                            }
+                            &:after {
+                                visibility: visible;
+                            }
+                        }
+                        &:after {
+                            content: "";
+                            display: block;
+                            border-bottom: 3px solid $mantis;
+                            width: 29px;
+                            margin: 0 auto;
+                            visibility: hidden;
+                        }
+                    }
+                }
+            }
+            /* navbar */
 
-		}
-		/* site-block */
-	}
+        }
+        /* site-block */
+    }
 }

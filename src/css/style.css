@@ -124,57 +124,61 @@ body {
         list-style: none; }
         #site-header .container .site-block #navbar ul li {
           float: left;
-          position: relative; }
+          position: relative;
+          margin-left: 52px; }
           #site-header .container .site-block #navbar ul li a {
             display: block;
             text-decoration: none;
             font-size: 19px;
             color: #383046;
-            margin-left: 48px; }
-            #site-header .container .site-block #navbar ul li a:after {
-              content: '';
-              border-bottom: 3px solid #8fc165;
-              width: 39px;
-              display: none;
-              margin: 0 auto;
-              padding-bottom: 20px; }
+            padding-bottom: 20px; }
             #site-header .container .site-block #navbar ul li a:hover {
               color: #8fc165; }
-              #site-header .container .site-block #navbar ul li a:hover:after {
-                display: block; }
           #site-header .container .site-block #navbar ul li ul {
             background: #8fc165;
             position: absolute;
             top: 100%;
-            left: 34%;
             display: none; }
-            #site-header .container .site-block #navbar ul li ul li a {
-              width: 170px;
-              display: block;
-              color: #ffffff;
-              text-align: left;
-              margin: 0;
-              padding: 10px; }
-              #site-header .container .site-block #navbar ul li ul li a:hover {
+            #site-header .container .site-block #navbar ul li ul li {
+              margin-left: 0; }
+              #site-header .container .site-block #navbar ul li ul li:after {
+                border: none; }
+              #site-header .container .site-block #navbar ul li ul li a {
+                width: 170px;
+                display: block;
+                color: #ffffff;
+                text-align: left;
+                margin: 0;
+                padding: 10px; }
+                #site-header .container .site-block #navbar ul li ul li a:hover {
+                  background: #383046;
+                  color: #ffffff; }
+                  #site-header .container .site-block #navbar ul li ul li a:hover:after {
+                    display: none; }
+              #site-header .container .site-block #navbar ul li ul li ul {
+                position: absolute;
+                top: 0;
+                left: 100%; }
+              #site-header .container .site-block #navbar ul li ul li:hover > a {
                 background: #383046;
                 color: #ffffff; }
-                #site-header .container .site-block #navbar ul li ul li a:hover:after {
-                  display: none; }
-            #site-header .container .site-block #navbar ul li ul li ul {
-              position: absolute;
-              top: 0;
-              left: 100%; }
           #site-header .container .site-block #navbar ul li:hover > ul {
             display: block; }
-          #site-header .container .site-block #navbar ul li.active > a {
+          #site-header .container .site-block #navbar ul li:hover:after {
+            visibility: visible; }
+          #site-header .container .site-block #navbar ul li:hover > a {
             color: #8fc165; }
-            #site-header .container .site-block #navbar ul li.active > a:after {
-              content: '';
-              border-bottom: 3px solid #8fc165;
-              width: 39px;
-              display: block;
-              margin: 0 auto;
-              padding-bottom: 20px; }
+          #site-header .container .site-block #navbar ul li.current-menu-item > a {
+            color: #8fc165; }
+          #site-header .container .site-block #navbar ul li.current-menu-item:after {
+            visibility: visible; }
+          #site-header .container .site-block #navbar ul li:after {
+            content: "";
+            display: block;
+            border-bottom: 3px solid #8fc165;
+            width: 29px;
+            margin: 0 auto;
+            visibility: hidden; }
 
 /* Footer */
 footer {
